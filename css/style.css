@@ -90,33 +90,50 @@ h6 {
 }
 
 body {
-  background-color: aliceblue;
+  background-color: #16a2dc;
+  font-family: 'Arial';
+  color: #fff;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .container {
-  max-width: 1130px;
+  max-width: 920px;
   margin: 0 auto;
   text-align: center;
   direction: rtl;
-  margin-top: 20px;
+  margin-top: 48px;
   padding-bottom: 30px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.image__block {
+  margin-bottom: 64px;
 }
 
 .main__title {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 64px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.wrapper {
+  text-align: right;
+  max-width: 730px;
+  margin: 0 auto;
 }
 
 .subtitle {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  font-weight: 700;
   font-size: 24px;
-  font-weight: 500;
+  line-height: 1.5;
   margin-top: 20px;
+  color: #fff;
 }
 
 .subtitle span {
@@ -124,26 +141,57 @@ body {
 }
 
 .link {
-  background: blue;
-  display: inline-block;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+  padding: 24px 0;
   border-radius: 8px;
-  padding: 6px 12px;
-  color: #fff;
-  margin-top: 20px;
-  font-size: 16px;
-  font-weight: 600;
+  color: #16a2dc;
+
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 64px;
 }
 
 a.link:visited {
-  background: blue;
+  background: #fff;
   border-radius: 8px;
-  padding: 6px 12px;
-  color: #fff;
+  padding: 24px 0;
+  color: #16a2dc;
+}
+
+.wrapper {
+  text-align: right;
+}
+
+.block {
+  margin-bottom: 64px;
+}
+
+.wrapper .subtitle {
+  align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.wrapper .center {
+  align-items: center;
 }
 
 .text {
   text-align: right;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  color: #fff;
+  margin-bottom: 24px;
 }
 
 .questions {
@@ -151,12 +199,43 @@ a.link:visited {
   margin-top: 20px;
 }
 
-.question {
-  margin-bottom: 15px;
+.questions__item {
+  margin-bottom: 24px;
 }
 
 .question__title {
   font-size: 20px;
   margin-bottom: 5px;
-  color: coral;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 17px;
+    padding-bottom: 8px;
+  }
+
+  .image__block {
+    margin-bottom: 36px;
+  }
+
+  .main__title {
+    font-size: 36px;
+    line-height: 1.44;
+    margin-bottom: 20px;
+  }
+
+  .center {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .link {
+    padding: 20px 0;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+
+  .block {
+    margin-bottom: 48px;
+  }
 }
