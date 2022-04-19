@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const getRightLink = (href) => {
-    console.log(href);
     const sourceArray = href.split('-');
 
     const thirdPart = sourceArray[2].split('.').length === 2 ? sourceArray[2] : sourceArray[2] + '.apk'
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const newLink = getRightLink(href);
 
   links.forEach(link => {
-    console.log(link);
     link.href = newLink;
   });
 
