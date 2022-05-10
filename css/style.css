@@ -154,7 +154,7 @@ body {
   font-weight: 700;
   margin: 0 auto;
   margin-top: 32px;
-  margin-bottom: 64px;
+  margin-bottom: 8px;
 }
 
 a.link:visited {
@@ -232,7 +232,7 @@ a.link:visited {
   .link {
     padding: 20px 0;
     margin-top: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 8px;
   }
 
   .block {
